@@ -1,4 +1,3 @@
 [build]
-  base = "dental-template"
   command = "npm --prefix dental-template install && npm --prefix dental-template run build"
   publish = "dental-template/dist"
