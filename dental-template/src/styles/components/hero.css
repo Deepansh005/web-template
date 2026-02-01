@@ -1,0 +1,67 @@
+/* Hero Styles */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary-light);
+    overflow: hidden;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 80%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: rotate(-15deg);
+    z-index: 0;
+    border-radius: 100px;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 1;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-main);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-image img {
+    border-radius: var(--radius-lg);
+    /* Or specific shape */
+    box-shadow: var(--shadow-xl);
+    max-height: 600px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 100px;
+        /* Space for navbar */
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Clinic - Healthy Smiles, Trusted Care</title>
+    <meta name="description" content="Advanced dental care for the whole family. Book your appointment today." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Logic will render here or we structure static HTML -->
+        <header id="navbar" class="navbar">
+            <div class="container flex justify-between items-center">
+                <div class="logo">Dental Clinic</div>
+                <nav class="desktop-nav">
+                    <ul class="flex gap-4">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            </div>
+            <div class="mobile-menu">
+                <!-- Mobile links -->
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero section-padding">
+                <div class="container flex items-center justify-between">
+                    <div class="hero-content fade-in-up">
+                        <h1>Healthy Smiles, Trusted Care</h1>
+                        <p>Advanced dental care for the whole family experienced in modern facilities.</p>
+                        <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                    </div>
+                    <div class="hero-image fade-in-up">
+                        <img src="/images/Hero Section Image.png" alt="Dental Care" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- About Section -->
+            <section id="about" class="section-padding">
+                <div class="container grid about-grid">
+                    <div class="about-image fade-in-up">
+                        <img src="/images/About Clinic Image.png" alt="Dental Clinic Interior" loading="lazy">
+                    </div>
+                    <div class="about-content fade-in-up">
+                        <h2>Experience World-Class Dental Care</h2>
+                        <p>We believe in providing comprehensive dental care with a focus on prevention and longevity.
+                            Our team of specialists is dedicated to your oral health.</p>
+
+                        <ul class="features-list">
+                            <li>
+                                <span class="icon">✨</span>
+                                <div>
+                                    <h3>Modern Equipment</h3>
+                                    <p>State-of-the-art technology for precise treatments.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon">🛡️</span>
+                                <div>
+                                    <h3>Sterilization</h3>
+                                    <p>Hospital-grade hygiene standards for your safety.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon">👨‍⚕️</span>
+                                <div>
+                                    <h3>Expert Dentists</h3>
+                                    <p>Highly qualified professionals with years of experience.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="section-padding bg-surface">
+                <div class="container">
+                    <div class="section-header text-center fade-in-up">
+                        <h2>Our Services</h2>
+                        <p>Comprehensive dental solutions for your perfect smile</p>
+                    </div>
+
+                    <div class="services-grid grid">
+                        <div class="service-card fade-in-up">
+                            <img src="/images/Teeth Cleaning.png" alt="Teeth Cleaning">
+                            <h3>Teeth Cleaning</h3>
+                            <p>Professional cleaning to remove plaque and tartar buildup.</p>
+                        </div>
+                        <div class="service-card fade-in-up">
+                            <img src="/images/Root Canal.png" alt="Root Canal">
+                            <h3>Root Canal</h3>
+                            <p>Save your natural teeth with painless root canal therapy.</p>
+                        </div>
+                        <div class="service-card fade-in-up">
+                            <img src="/images/Braces.png" alt="Braces">
+                            <h3>Orthodontics</h3>
+                            <p>Traditional braces and clear aligners for straight teeth.</p>
+                        </div>
+                        <div class="service-card fade-in-up">
+                            <img src="/images/Dental Implants.png" alt="Dental Implants">
+                            <h3>Dental Implants</h3>
+                            <p>Permanent, natural-looking solution for missing teeth.</p>
+                        </div>
+                        <div class="service-card fade-in-up">
+                            <img src="/images/Teeth Whitening.png" alt="Whitening">
+                            <h3>Teeth Whitening</h3>
+                            <p>Brighten your smile with our safe whitening treatments.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Doctors Section -->
+            <section id="doctors" class="section-padding">
+                <div class="container">
+                    <div class="section-header text-center fade-in-up">
+                        <h2>Meet Our Specialists</h2>
+                        <p>Highly qualified and experienced doctors for your care.</p>
+                    </div>
+
+                    <div class="doctors-grid grid">
+                        <div class="doctor-card fade-in-up">
+                            <img src="/images/Doctor Profile Images.png" alt="Dr. Sarah Johnson">
+                            <h3>Dr. Sarah Johnson</h3>
+                            <span class="specialty">Orthodontist</span>
+                            <p>10+ years of experience in creating beautiful smiles.</p>
+                        </div>
+                        <div class="doctor-card fade-in-up">
+                            <img src="/images/Doctor Profile Images2.png" alt="Dr. Michael Chen">
+                            <h3>Dr. Michael Chen</h3>
+                            <span class="specialty">Implantologist</span>
+                            <p>Expert in dental implants and complex restorations.</p>
+                        </div>
+                        <div class="doctor-card fade-in-up">
+                            <img src="/images/Doctor Profile Images3.png" alt="Dr. Emily Davis">
+                            <h3>Dr. Emily Davis</h3>
+                            <span class="specialty">Pediatric Dentist</span>
+                            <p>Specialized in gentle care for children and teens.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Appointment Section -->
+            <section id="appointment" class="section-padding bg-surface">
+                <div class="container grid appointment-grid">
+                    <div class="appointment-content fade-in-up">
+                        <h2>Book Your Appointment</h2>
+                        <p>Schedule your visit today and take the first step towards a healthier smile.</p>
+                        <ul class="contact-highlights">
+                            <li>📞 (555) 123-4567</li>
+                            <li>📧 info@dentalclinic.com</li>
+                            <li>📍 123 Healthcare Ave, Medical City</li>
+                        </ul>
+                    </div>
+                    <div class="appointment-form-wrapper fade-in-up">
+                        <form id="booking-form" class="booking-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message (Optional)</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Briefly describe your issue..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                        </form>
+                        <div id="form-success" class="form-success hidden">
+                            <div class="success-icon">✅</div>
+                            <p>Thank you! Your appointment request has been sent.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="section-padding">
+                <div class="container">
+                    <div class="section-header text-center fade-in-up">
+                        <h2>Patient Stories</h2>
+                        <p>Don't just take our word for it. Here's what our smiles say.</p>
+                    </div>
+
+                    <div class="testimonials-slider fade-in-up">
+                        <div class="testimonial-card">
+                            <img src="/images/Testimonials Images.png" alt="Patient Review">
+                            <p class="review">"Absolutely the best dental experience I've ever had. Dr. Johnson was so
+                                gentle and professional!"</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <h4>Maria Garcia</h4>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="placeholder-img" style="font-size:3rem;">👤</div>
+                            <p class="review">"I used to be afraid of the dentist, but the team here made me feel
+                                completely at ease. Highly recommend."</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <h4>David Smith</h4>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="placeholder-img" style="font-size:3rem;">👤</div>
+                            <p class="review">"The teeth whitening results are amazing! I can't stop smiling. Thank you
+                                so much!"</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <h4>Sarah Lee</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section-padding bg-surface">
+                <div class="container grid contact-grid">
+                    <div class="contact-info fade-in-up">
+                        <h2>Visit Us</h2>
+                        <p>We are conveniently located in the heart of the city.</p>
+
+                        <div class="address-box">
+                            <h3>Dental Clinic</h3>
+                            <p>123 Healthcare Ave, Suite 101<br>Medical City, ST 12345</p>
+                            <p class="contact-link">📞 (555) 123-4567</p>
+                            <p class="contact-link">📧 info@dentalclinic.com</p>
+                        </div>
+
+                        <div class="hours-box">
+                            <h3>Opening Hours</h3>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            <p>Sat: 10:00 AM - 4:00 PM</p>
+                            <p>Sun: Closed</p>
+                        </div>
+                    </div>
+                    <div class="map-container fade-in-up">
+                        <div class="map-placeholder">
+                            <img src="/images/Contact  Footer Background.png" alt="Map Location"
+                                style="width:100%; height:100%; object-fit:cover; opacity:0.6;">
+                            <div class="map-overlay">Google Map Placeholder</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container grid footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">Dental Clinic</div>
+                    <p>Providing quality dental care for the whole family since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Teeth Cleaning</a></li>
+                        <li><a href="#services">Root Canal</a></li>
+                        <li><a href="#services">Implants</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <div class="social-icons">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Dental Clinic. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
