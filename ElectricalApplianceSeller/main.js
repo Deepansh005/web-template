@@ -53,44 +53,17 @@ revealImages.forEach((img) => {
 })
 
 // Entrance Animation for Product Cards
-const productCards = document.querySelectorAll('.product-card')
-gsap.from(productCards, {
-    y: 50,
+// Simple fade-up that guarantees visibility
+gsap.from(".product-card", {
+    y: 30,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.6,
     stagger: 0.1,
-    ease: "power3.out",
+    ease: "power2.out",
     scrollTrigger: {
         trigger: ".product-grid",
-        start: "top 80%",
+        start: "top 85%",
     }
-})
-
-// Product Cards Magnetic/Hover Effect
-productCards.forEach((card) => {
-    card.addEventListener('mousemove', (e) => {
-        const { left, top, width, height } = card.getBoundingClientRect()
-        const x = (e.clientX - left - width / 2) / 25
-        const y = (e.clientY - top - height / 2) / 25
-
-        gsap.to(card, {
-            rotateY: x,
-            rotateX: -y,
-            scale: 1.02,
-            duration: 0.5,
-            ease: "power2.out"
-        })
-    })
-
-    card.addEventListener('mouseleave', () => {
-        gsap.to(card, {
-            rotateY: 0,
-            rotateX: 0,
-            scale: 1,
-            duration: 0.5,
-            ease: "power2.out"
-        })
-    })
 })
 
 // Hero Image Parallax
