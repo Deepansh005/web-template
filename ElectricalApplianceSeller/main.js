@@ -52,8 +52,21 @@ revealImages.forEach((img) => {
     })
 })
 
-// Product Cards Magnetic/Hover Effect
+// Entrance Animation for Product Cards
 const productCards = document.querySelectorAll('.product-card')
+gsap.from(productCards, {
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.1,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".product-grid",
+        start: "top 80%",
+    }
+})
+
+// Product Cards Magnetic/Hover Effect
 productCards.forEach((card) => {
     card.addEventListener('mousemove', (e) => {
         const { left, top, width, height } = card.getBoundingClientRect()
