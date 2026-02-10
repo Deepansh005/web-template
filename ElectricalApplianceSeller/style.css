@@ -40,6 +40,28 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+::selection {
+    background: var(--accent);
+    color: #fff;
+}
+
 a {
     text-decoration: none;
     color: inherit;
