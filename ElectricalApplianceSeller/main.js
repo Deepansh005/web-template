@@ -21,50 +21,8 @@ lenis.on('scroll', (e) => {
     }
 })
 
-// Entrance Animations for Text
-const revealTexts = document.querySelectorAll('.reveal-text')
-revealTexts.forEach((text) => {
-    gsap.from(text, {
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-            trigger: text,
-            start: "top 85%",
-            toggleActions: "play none none none"
-        }
-    })
-})
-
-// Entrance Animations for Images
-const revealImages = document.querySelectorAll('.reveal-image')
-revealImages.forEach((img) => {
-    gsap.from(img, {
-        scale: 0.9,
-        opacity: 0,
-        duration: 1.5,
-        ease: "expo.out",
-        scrollTrigger: {
-            trigger: img,
-            start: "top 80%",
-        }
-    })
-})
-
-// Entrance Animation for Product Cards
-// Simple fade-up that guarantees visibility
-gsap.from(".product-card", {
-    y: 30,
-    opacity: 0,
-    duration: 0.6,
-    stagger: 0.1,
-    ease: "power2.out",
-    scrollTrigger: {
-        trigger: ".product-grid",
-        start: "top 85%",
-    }
-})
+// Animations Removed for Classic Static Layout
+// Elements are visible by default via CSS
 
 // Hero Image Parallax
 gsap.to(".hero-image", {
