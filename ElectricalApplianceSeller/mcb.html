@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex Blender | Elite Electric</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <style>
+        .product-hero {
+            padding-top: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .product-gallery img {
+            border-radius: 24px;
+            width: 100%;
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .spec-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .diagram-section {
+            padding: 6rem 0;
+            background: var(--surface);
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .diagram-img {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 12px;
+            background: #e2e8f0;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-banner">
+        <span class="banner-content">📍 123 Electric Ave, Technology City - Visit our Showroom!</span>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="nav-content">
+                <a href="/" class="logo">ELITE ELECTRIC</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/index.html#products">Products</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section style="padding-top: 2rem;">
+            <div class="container">
+                <div class="product-hero">
+                    <div class="product-gallery reveal-image">
+                        <img src="https://images.unsplash.com/photo-1585238341267-4c5985d26f7a?q=80&w=2070&auto=format&fit=crop"
+                            alt="Vortex Blender">
+                    </div>
+                    <div class="product-details reveal-text">
+                        <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Vortex Blender</h1>
+                        <p style="font-size: 1.5rem; color: var(--accent); font-weight: 600; margin-bottom: 2rem;">
+                            $299.00</p>
+                        <p style="margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">
+                            Unleash culinary creativity with the Vortex Blender. Its high-torque motor and hardened
+                            steel blades can pulverize the toughest ingredients into silky smooth textures in seconds.
+                        </p>
+                        <ul style="margin-bottom: 3rem; list-style: circle; padding-left: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem;">2.5 Horsepower High-Performance Motor</li>
+                            <li style="margin-bottom: 0.5rem;">Aircraft-Grade Stainless Steel Blades</li>
+                            <li style="margin-bottom: 0.5rem;">5 Pre-Programmed Settings + Variable Speed</li>
+                        </ul>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card reveal-text">
+                        <h4>Motor</h4>
+                        <p>1500W Peak</p>
+                    </div>
+                    <div class="spec-card reveal-text">
+                        <h4>Jar</h4>
+                        <p>Tritan™ (BPA-Free)</p>
+                    </div>
+                    <div class="spec-card reveal-text">
+                        <h4>Capacity</h4>
+                        <p>64 oz</p>
+                    </div>
+                    <div class="spec-card reveal-text">
+                        <h4>Warranty</h4>
+                        <p>7 Years</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="diagram-section">
+            <div class="container">
+                <h2 class="section-title">Cyclonic Action</h2>
+                <p style="margin-bottom: 3rem;">Designed to pull ingredients down for a faster, smoother blend.</p>
+                <div class="diagram-img reveal-image">
+                    [Airflow & Blade Diagram Placeholder]
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elite Electric Appliances. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
