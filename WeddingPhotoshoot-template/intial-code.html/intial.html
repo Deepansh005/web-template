@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>M &amp; A Photography | Capturing Eternity 2026</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#195de6",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #111621;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #292e38;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f4654;
+        }
+
+        .text-shadow {
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
+    <!-- Sticky Navigation -->
+    <nav
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background-dark/80 backdrop-blur-md border-b border-[#292e38]">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4 text-white">
+                <div class="size-6 text-primary">
+                    <span class="material-symbols-outlined text-2xl">camera</span>
+                </div>
+                <h2 class="text-white text-lg font-bold tracking-widest uppercase">M &amp; A Photography</h2>
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="#">Portfolio</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="#">Experience</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="#">Investment</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="#">Journal</a>
+            </div>
+            <button
+                class="hidden md:flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold tracking-wide">
+                <span>Inquire</span>
+            </button>
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            data-alt="Cinematic wedding couple silhouette against sunset"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2gjoKsEtPfeo5DskVQyuI6s5-gl1vSAQNwU-Pdak2kcZoq3NnVgUd5U7E-9aCcty4ssIJfWFuW6cnI-fe_4ethPWsl3cxTcMPpZk11fFkryDWDQe8EAmatBeln_e5GDJ3Z6YdSd7yVr1FZtqqYrbpDiLGEHqSQi1n6VAocvjA4IUOpqclaKtAyRY3r0YTofcvh2A-XdL8dpxmt5tAEAHNld9gM2LrB-Gf2100DXAJwOD0Z2wEChoqR208xckgXf39BwRf1Xt7pa0');">
+            <div class="absolute inset-0 bg-black/40 bg-gradient-to-t from-background-dark via-transparent to-black/30">
+            </div>
+        </div>
+        <div class="relative z-10 text-center px-4 flex flex-col items-center gap-6 animate-fade-in-up">
+            <span class="text-primary font-medium tracking-[0.2em] text-sm uppercase mb-2">Editorial Wedding
+                Photography</span>
+            <h1
+                class="text-white font-serif text-5xl md:text-7xl lg:text-8xl font-medium leading-tight tracking-tight text-shadow">
+                CAPTURING<br />ETERNITY 2026
+            </h1>
+            <p class="text-slate-200 text-lg md:text-xl font-light max-w-lg mt-4 leading-relaxed text-shadow">
+                Cinematic storytelling for the modern romantic. Preserving the quiet moments between the chaos.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <button
+                    class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-bold tracking-wide transition-all transform hover:scale-105">
+                    View Portfolio
+                </button>
+                <button
+                    class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-8 py-3 rounded-lg font-bold tracking-wide transition-all">
+                    Learn More
+                </button>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div
+            class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 animate-bounce flex flex-col items-center gap-2">
+            <span class="text-xs uppercase tracking-widest">Scroll</span>
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </div>
+    </header>
+    <!-- Artistic Vision Section -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 max-w-[1400px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <div
+                    class="absolute -inset-4 bg-primary/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div class="relative aspect-[3/4] overflow-hidden rounded-lg">
+                    <img alt="Bride looking out window in black and white"
+                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                        data-alt="Black and white artistic portrait of a bride"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuARYBpL9r9aQOh-4k_odE2dfKcI0Rw8wxBeIiy-aOMO7SAT2JvcrBlO4h1yD6JMtCQpWulMDJfNNRQQEVI2ISAFCc4RPCYKSACHphKGdcKRPk5TXI1H7zZwHBi3Nqb8TpU5UjHhjUaYeVN6ote9W7RohIrhXbWBlKmfqme1sw1d6TS8Ta_SgeMtXQxXBGkMACvmHqeZe8xC9fjii9pxwqgsUlc7lt3_PwkwJwxiEK0JKUXXMB-BqKWmXgU0CMJylwUIaJZ9F9CBQG8" />
+                </div>
+                <!-- Floating Detail Card -->
+                <div
+                    class="absolute -bottom-6 -right-6 bg-background-dark border border-slate-800 p-6 rounded-lg shadow-xl max-w-xs hidden md:block">
+                    <p class="text-primary text-sm font-bold uppercase tracking-wider mb-2">Our Philosophy</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">"We don't just take photos; we curate memories
+                        that feel like cinema."</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-8">
+                <div>
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">Artistic
+                        Vision</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-white mb-6 leading-tight">
+                        Timeless Elegance,<br />Editorial Grace.
+                    </h2>
+                    <div class="w-20 h-1 bg-primary mb-8"></div>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                        We believe in the quiet moments between the chaos. Our approach is editorial yet deeply
+                        personal, capturing the raw emotion and timeless elegance of your special day with a refined,
+                        cinematic eye.
+                    </p>
+                    <p class="text-slate-400 text-lg leading-relaxed">
+                        Every shot is composed like a painting, designed to last generations. We focus on natural light,
+                        genuine connection, and the subtle details that make your story unique.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 py-6 border-t border-slate-800">
+                    <div>
+                        <h4 class="text-white font-bold text-xl mb-1">500+</h4>
+                        <p class="text-slate-500 text-sm">Weddings Captured</p>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-xl mb-1">12</h4>
+                        <p class="text-slate-500 text-sm">Countries Visited</p>
+                    </div>
+                </div>
+                <a class="inline-flex items-center gap-2 text-white font-bold hover:text-primary transition-colors group"
+                    href="#">
+                    Read Our Full Philosophy
+                    <span
+                        class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Weddings (Masonry Grid) -->
+    <section class="py-24 bg-[#0d1119]">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">Portfolio</span>
+                    <h2 class="font-serif text-4xl text-white">Featured Love Stories</h2>
+                </div>
+                <a class="text-slate-400 hover:text-white transition-colors text-sm font-medium border-b border-transparent hover:border-white pb-1"
+                    href="#">View All Stories</a>
+            </div>
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Item 1 -->
+                <div class="break-inside-avoid group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-slate-900">
+                        <img alt="Couple kissing by Lake Como"
+                            class="w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+                            data-alt="Couple kissing by Lake Como"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuEra484ZyxmEs01E1w5jmjbM5sjO6uyCeey_GIuBntHXqoduz-iqiiegU8ocXvB_ggwZAwt02DZ7b2R3PspTxM1IvPTP-bBeGe6D4UssVt6CSPaMl5g3tSLZdF10_01oiy2u8Orgk2D8csnphRIWfJ27frY8VxwZHWeUZbCetkXUk0ErP90HcjtdKaObPe96zum2Fn5CJHZs8HUK7eGCQdjzLDIGmQS4U7qrORPayAXxBRW0uPeYMxAbcGzIL27n7hkWKMPfCPt4" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Italy</span>
+                            <h3 class="text-white font-serif text-2xl">Sarah &amp; James</h3>
+                            <p class="text-slate-300 text-sm mt-1">Lake Como, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="break-inside-avoid group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-slate-900 aspect-[3/4]">
+                        <img alt="Bride in vintage dress holding bouquet"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+                            data-alt="Bride in vintage dress holding bouquet"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu2vVQSb_lsbxyGsubfYlXCJUVfnzJB64Y-GsEEOdyPzN9akJTfCtVtN-cpc78Ivk9_IsHBPdSc0W-R_U6gmkBW78y-nW4tEC_vOse3x6IB26acknYWcce88x25JBmbbtsAhokzu1MooDEhoTt8XFk_y-X_g8C_Pw-x2-DoIf0c8iyh1nlX-cnedFZvC7eHAHTy-0a7Mzlixg39mKFwJQ5JTu2uyW3YE143NuMDkVWv3HB-wgW2WdR_egs1o4Xk79OeJAm8CCHSDg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">New York</span>
+                            <h3 class="text-white font-serif text-2xl">Elena &amp; Mark</h3>
+                            <p class="text-slate-300 text-sm mt-1">The Plaza, NYC</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="break-inside-avoid group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-slate-900">
+                        <img alt="Groom adjusting cufflinks"
+                            class="w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+                            data-alt="Groom adjusting cufflinks detail shot"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuKOGsth4kbhYYpAb7KXI42yTGaW1iupMYXVjMihBZY2n_M0Q5rWpi_qcFhmTGC0yZLWN3MIY7zvflZlXwkqbdLISklZddT-2F4O2BMkplOEm0H-c0yFy9auEDRvxr8Uvrz_9AzNAiLy4GhT3yviRCZN7IORYGakFRKm_2Lm7Tl-fs3cPTXgy82KaQzkuViE4ep2ZGbceUpBbIDleNNTXMas6jhx4G8lVm-wGANzEc_CVflL01XV5dwSN_5toB7he-3poDQDS-mTo" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">France</span>
+                            <h3 class="text-white font-serif text-2xl">Sofia &amp; David</h3>
+                            <p class="text-slate-300 text-sm mt-1">Provence</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="break-inside-avoid group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-slate-900 aspect-square">
+                        <img alt="Abstract veil detail"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+                            data-alt="Abstract veil detail shot"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbyDshhgUMyTP3qnztXRN_QjgbyQXZ2PDKTjzFYiFf9m3mw0pg0OyyCOt4KpEg21V0VcHUjYk5VxhPua7QeL0EKiBaLrQwdpJzFKFl73LQl0ccQItz4sdVxxERLuDzgsiOnpJjNHA9tZNMQ03T-IyvMtbrDZrH8TBzmmfbxukh1ZFJvB6dvESyOSmeGgZiX0SLv_FvpnjYSM9Rsz5Te-LT5_VUSTr0nEWz6F6rfub_HvF_drDqnrEwsaLTcY0TcZ4viDfJrhkBkhU" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Details</span>
+                            <h3 class="text-white font-serif text-2xl">The Little Things</h3>
+                            <p class="text-slate-300 text-sm mt-1">Various Locations</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="break-inside-avoid group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg bg-slate-900 aspect-[3/5]">
+                        <img alt="Couple running in field"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+                            data-alt="Couple running in field during sunset"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg2Oy7mBE9qnI4Y5PsirHuRIwBekl0TNM9jsHHF9ObypWv3dPnG-F82QaykHQhQYn5sV3Ydw7_U3IolXHweiZ0Nb1MX2UsUAoHhGYUCwxgqtpLo6Qxa5YX8oNNgH_oWk53c90nZ5IlhOZ5VpIERelvsNheCPIiN3ElEmfqu0jD-RpugOPE22xqAcGHJpEMf_tSXBwLc_tIPEsk8fY4SNhF3n1NXdxCpUBHK0CddcvRN7KS91lZHqF9V_qnOZtIiE4rLWe9noNkj44" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Scotland</span>
+                            <h3 class="text-white font-serif text-2xl">Liam &amp; Chloe</h3>
+                            <p class="text-slate-300 text-sm mt-1">Isle of Skye</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Slider -->
+    <section class="py-24 bg-background-dark relative overflow-hidden">
+        <!-- Decorative subtle background -->
+        <div
+            class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-slate-900/50 to-transparent pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="material-symbols-outlined text-6xl text-primary/30 mb-8">format_quote</span>
+            <div class="space-y-8">
+                <p class="font-serif text-3xl md:text-4xl text-white italic leading-relaxed">
+                    "They didn't just take photos; they captured the feeling of the day. Looking at our album is like
+                    reliving the magic all over again. Simply breathtaking."
+                </p>
+                <div class="flex flex-col items-center gap-2">
+                    <h5 class="text-white font-bold tracking-wide uppercase">Alexandra &amp; Thomas</h5>
+                    <span class="text-slate-500 text-sm">Married June 2025 in Tuscany</span>
+                </div>
+            </div>
+            <!-- Simple Slider Indicators -->
+            <div class="flex justify-center gap-3 mt-12">
+                <button class="w-12 h-1 bg-primary rounded-full transition-all"></button>
+                <button class="w-12 h-1 bg-slate-700 hover:bg-slate-500 rounded-full transition-all"></button>
+                <button class="w-12 h-1 bg-slate-700 hover:bg-slate-500 rounded-full transition-all"></button>
+            </div>
+        </div>
+    </section>
+    <!-- CTA / Footer Pre-section -->
+    <section class="relative py-32 px-6 flex items-center justify-center bg-fixed bg-cover bg-center"
+        data-alt="Blurred wedding reception lights"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBClFYoFr9UX5F9sm3tg5YJgKPp7gQe5qE-4wlG2VepLqSrdhe-RFbmIgbkK3y6Xh5DNu0Dt-Lq8rZrF_5dDRiwl9nbbPEl9Al1YPHhxtY9sd17AGmJoJIkQe2Ht9b0zAxdIvOGLRy_QCP89C6IqZIfdqh08sfXxLNj-I_gH9MCzx0O84nY57CZ1Mn2e-56QpHDIRjN8qG66Mm5mwLGZf89tFHDv-JM23gu3Y6Adf9rEaJqTyjxZ2CPRwMeXuLUBEZcSwcqL91Lx4M');">
+        <div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm"></div>
+        <div class="relative z-10 text-center max-w-2xl">
+            <h2 class="font-serif text-4xl md:text-6xl text-white mb-6">Let's Create Magic</h2>
+            <p class="text-slate-300 text-lg mb-10">We are currently accepting bookings for the 2026 wedding season.
+                Dates are limited.</p>
+            <button
+                class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-lg font-bold tracking-wide text-lg shadow-lg shadow-primary/20 transition-all transform hover:-translate-y-1">
+                Book Your Consultation
+            </button>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Column 1: Brand -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 text-white mb-6">
+                        <span class="material-symbols-outlined text-primary text-2xl">camera</span>
+                        <h3 class="text-xl font-bold tracking-wider uppercase">M &amp; A</h3>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Editorial wedding photography based in New York, available worldwide. Capturing love in its
+                        purest form.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                                class="sr-only">Instagram</span>
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.484 2h.23zM12.315 4.885c-2.75 0-5.495.057-5.97.947-.197.37-.317.807-.354 1.257-.027.34-.027.678-.027 3.518 0 2.84 0 3.178.027 3.518.037.45.157.887.354 1.257.475.89 3.22.947 5.97.947 2.75 0 5.495-.057 5.97-.947.197-.37.317-.807.354-1.257.027-.34.027-.678.027-3.518 0-2.84 0-3.178-.027-3.518-.037-.45-.157-.887-.354-1.257-.475-.89-3.22-.947-5.97-.947zM12.315 8.13c1.94 0 3.513 1.573 3.513 3.513 0 1.94-1.573 3.513-3.513 3.513-1.94 0-3.513-1.573-3.513-3.513 0-1.94 1.573-3.513 3.513-3.513z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                                class="sr-only">Twitter</span>
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Column 2: Links -->
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 text-sm">Explore</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#">Portfolio</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#">Experience</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#">Investment</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Journal</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact -->
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 text-sm">Contact</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="mailto:hello@maphotography.com">hello@maphotography.com</a></li>
+                        <li class="text-slate-400 text-sm">+1 (555) 123-4567</li>
+                        <li class="text-slate-400 text-sm">123 Studio Ave, NY 10012</li>
+                    </ul>
+                </div>
+                <!-- Column 4: Newsletter -->
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 text-sm">Stay Updated</h4>
+                    <p class="text-slate-500 text-sm mb-4">Subscribe for travel dates &amp; exclusive offers.</p>
+                    <div class="flex flex-col gap-3">
+                        <input
+                            class="bg-slate-800 border-none text-white text-sm rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none"
+                            placeholder="Your Email Address" type="email" />
+                        <button
+                            class="bg-slate-700 hover:bg-slate-600 text-white text-sm font-bold uppercase tracking-wide rounded-lg p-3 transition-colors">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-xs text-center md:text-left">© 2026 M &amp; A Photography. All Rights
+                    Reserved.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-600 hover:text-slate-400 text-xs transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-slate-600 hover:text-slate-400 text-xs transition-colors" href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

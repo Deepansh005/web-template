@@ -1,0 +1,41 @@
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111621;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #292e38;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f4654;
+}
+
+.text-shadow {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base animations for components */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Lightbox styles */
+#lightbox {
+    transition: opacity 0.3s ease;
+}
+
+#lightbox.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
