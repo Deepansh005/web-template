@@ -154,6 +154,7 @@ h4 {
     background: linear-gradient(90deg, var(--bg) 0%, var(--accent) 50%, var(--bg) 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
