@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio | M &amp; A Photography</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#195de6",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
+    <!-- Sticky Navigation -->
+    <nav
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background-dark/80 backdrop-blur-md border-b border-[#292e38]">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4 text-white">
+                <div class="size-6 text-primary">
+                    <span class="material-symbols-outlined text-2xl">camera</span>
+                </div>
+                <h2 class="text-white text-lg font-bold tracking-widest uppercase">M &amp; A Photography</h2>
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="about.html">About & Experience</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="services.html">Services</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium tracking-wide transition-colors"
+                    href="films.html">Films</a>
+            </div>
+            <a href="contact.html"
+                class="hidden md:flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold tracking-wide">
+                <span>Inquire</span>
+            </a>
+            <!-- Mobile Menu Icon -->
+            <button id="mobile-menu-btn" class="md:hidden text-white z-50 relative">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-background-dark/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center md:hidden">
+        <div class="flex flex-col items-center gap-8 text-2xl font-serif">
+            <a href="index.html" class="text-white hover:text-primary transition-colors">Home</a>
+            <a href="portfolio.html" class="text-white hover:text-primary transition-colors">Portfolio</a>
+            <a href="about.html" class="text-white hover:text-primary transition-colors">About</a>
+            <a href="services.html" class="text-white hover:text-primary transition-colors">Services</a>
+            <a href="films.html" class="text-white hover:text-primary transition-colors">Films</a>
+            <a href="contact.html"
+                class="mt-4 bg-primary text-white px-8 py-3 rounded-lg text-lg font-sans font-bold tracking-wide">Inquire
+                Now</a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="relative pt-40 pb-16">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24">
+            <div class="text-center max-w-3xl mx-auto fade-up">
+                <h1 class="text-white font-serif text-5xl md:text-7xl font-medium leading-tight mb-6">Gallery</h1>
+                <p class="text-slate-300 text-lg md:text-xl font-light">A curated collection of moments, designed to be
+                    remembered forever.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Buttons -->
+    <section class="pb-8 fade-up">
+        <div class="max-w-[1400px] mx-auto px-6 flex flex-wrap justify-center gap-4">
+            <button
+                class="filter-btn active text-sm font-bold tracking-widest uppercase border-b-2 border-primary text-white pb-2 px-2 transition-colors"
+                data-filter="all">All</button>
+            <button
+                class="filter-btn text-sm font-bold tracking-widest uppercase border-b-2 border-transparent text-slate-400 hover:text-white pb-2 px-2 transition-colors"
+                data-filter="wedding">Wedding</button>
+            <button
+                class="filter-btn text-sm font-bold tracking-widest uppercase border-b-2 border-transparent text-slate-400 hover:text-white pb-2 px-2 transition-colors"
+                data-filter="pre-wedding">Pre-Wedding</button>
+            <button
+                class="filter-btn text-sm font-bold tracking-widest uppercase border-b-2 border-transparent text-slate-400 hover:text-white pb-2 px-2 transition-colors"
+                data-filter="events">Events</button>
+        </div>
+    </section>
+
+    <!-- Masonry Gallery -->
+    <section class="py-12 pb-32">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+            <div id="gallery-grid" class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
+
+                <!-- Gallery Item: Wedding -->
+                <div class="gallery-item wedding break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up"
+                    onclick="openLightbox('images/authentic-indian-bride-groom-s-hands-holding-together-traditional-wedding-attire.jpg')">
+                    <img src="images/authentic-indian-bride-groom-s-hands-holding-together-traditional-wedding-attire.jpg"
+                        alt="Indian bride and groom holding hands"
+                        class="w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item: Wedding -->
+                <div class="gallery-item wedding break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up aspect-[3/4]"
+                    onclick="openLightbox('images/elegant-indian-wedding.jpg')">
+                    <img src="images/elegant-indian-wedding.jpg" alt="Elegant Indian Wedding"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item: Pre-Wedding -->
+                <div class="gallery-item pre-wedding break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up"
+                    onclick="openLightbox('images/beautiful-caucasian-wedding-couple-is-standing-front-decorated-with-blue-hydrangea-archway-holding-hands-together.jpg')">
+                    <img src="images/beautiful-caucasian-wedding-couple-is-standing-front-decorated-with-blue-hydrangea-archway-holding-hands-together.jpg"
+                        alt="Couple Pre-Wedding"
+                        class="w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item: Wedding -->
+                <div class="gallery-item wedding break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up aspect-square"
+                    onclick="openLightbox('images/bridesmaid-helps-indian-bride-put-jewelry-her-hand.jpg')">
+                    <img src="images/bridesmaid-helps-indian-bride-put-jewelry-her-hand.jpg"
+                        alt="Bridesmaid helping bride"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item: Events -->
+                <div class="gallery-item events break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up"
+                    onclick="openLightbox('images/amish-thakkar-BEdxXAiRfRM-unsplash.jpg')">
+                    <img src="images/amish-thakkar-BEdxXAiRfRM-unsplash.jpg" alt="Event Details"
+                        class="w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item: Pre-Wedding -->
+                <div class="gallery-item pre-wedding break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up"
+                    onclick="openLightbox('images/wonderful-wedding-ceremony-place-near-sea-decorated-by-flowers.jpg')">
+                    <img src="images/wonderful-wedding-ceremony-place-near-sea-decorated-by-flowers.jpg"
+                        alt="Ceremony near sea"
+                        class="w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item: Events -->
+                <div class="gallery-item events break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up"
+                    onclick="openLightbox('images/amish-thakkar-lAY2TAhN06k-unsplash.jpg')">
+                    <img src="images/amish-thakkar-lAY2TAhN06k-unsplash.jpg" alt="Event details 2"
+                        class="w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item: Wedding -->
+                <div class="gallery-item wedding break-inside-avoid group cursor-pointer relative overflow-hidden rounded-lg bg-slate-900 fade-up"
+                    onclick="openLightbox('images/anubhav-event-productions-KTEtxTbW3zo-unsplash.jpg')">
+                    <img src="images/anubhav-event-productions-KTEtxTbW3zo-unsplash.jpg" alt="Wedding couple"
+                        class="w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16 fade-up">
+                <button
+                    class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-8 py-3 rounded-lg font-bold tracking-wide transition-all">
+                    Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox"
+        class="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <button onclick="closeLightbox()"
+            class="absolute top-6 right-6 text-white hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged view"
+            class="max-h-[85vh] max-w-[90vw] object-contain rounded drop-shadow-2xl">
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Column 1: Brand -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 text-white mb-6">
+                        <span class="material-symbols-outlined text-primary text-2xl">camera</span>
+                        <h3 class="text-xl font-bold tracking-wider uppercase">M &amp; A</h3>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Editorial wedding photography based in New York, available worldwide. Capturing love in its
+                        purest form.
+                    </p>
+                </div>
+                <!-- Column 2: Links -->
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 text-sm">Explore</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="portfolio.html">Portfolio</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="about.html">About & Experience</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="services.html">Services</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="films.html">Films</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact -->
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6 text-sm">Contact</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="mailto:hello@maphotography.com">hello@maphotography.com</a></li>
+                        <li class="text-slate-400 text-sm">+1 (555) 123-4567</li>
+                        <li class="text-slate-400 text-sm">123 Studio Ave, NY 10012</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-xs text-center md:text-left">© 2026 M &amp; A Photography. All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active styling
+                    filterBtns.forEach(b => {
+                        b.classList.remove('border-primary', 'text-white');
+                        b.classList.add('border-transparent', 'text-slate-400');
+                    });
+                    btn.classList.add('border-primary', 'text-white');
+                    btn.classList.remove('border-transparent', 'text-slate-400');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                            // Restart GSAP for newly visible items if desired, simple display logic for now
+                            gsap.fromTo(item, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4 });
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = imageSrc;
+            lightbox.classList.remove('hidden');
+            // Small delay to allow display block to apply before animating opacity
+            setTimeout(() => lightbox.classList.remove('opacity-0'), 10);
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('opacity-0');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+            }, 300); // Wait for transition
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    </script>
+</body>
+
+</html>
